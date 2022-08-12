@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+body{
+    background-color: lightblue;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header{
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    height: 25vh;
+}
+
+#search{
+    padding: 1rem;
+    height: 70%;
+    width: 80vw;
+    font-size: 3rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    outline: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card{
+    transition: .3s all ease-in-out;
+    background-color: rgb(75, 75, 75);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    height: 15vh;
+}
+
+.card:hover{
+    transform: scale(101%);
+}
+
+.top{
+    background-color: grey;
+    border-bottom: .5px solid black;
+}
+
+.bottom{
+    background-color: lightgrey;
+    font-size: 1rem;
+    border-top: .5px solid black;
+    overflow: hidden;
+}
+
+.top, .bottom{
+    padding: 1rem;
+}
+
+@keyframes anim{
+    from{
+        transform:translateX(-500px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}

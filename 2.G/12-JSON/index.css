@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro";
+}
+
+body{
+    overflow: hidden;
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.card{
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    text-align: center;
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px;
+}
+
+.card:hover{
+    transform: scale(101%);
+}
+
+@keyframes anim{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
